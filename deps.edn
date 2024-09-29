@@ -1,8 +1,8 @@
 {:deps {org.clojure/clojure {:mvn/version "1.9.0"}
-        clojure.java-time {:mvn/version "0.3.2"}
-        http-kit {:mvn/version "2.3.0"}
-        ring {:mvn/version "1.7.1"}
-        compojure {:mvn/version "1.6.1"}
+        clojure.java-time/clojure.java-time {:mvn/version "0.3.2"}
+        http-kit/http-kit {:mvn/version "2.3.0"}
+        ring/ring {:mvn/version "1.7.1"}
+        compojure/compojure {:mvn/version "1.6.1"}
         com.taoensso/tufte {:mvn/version "2.1.0-RC4"}}
 
  :paths ["src" "resources"]
@@ -17,12 +17,12 @@
            :dev {:extra-paths ["dev"]}
 
            :nrepl {:extra-paths ["dev"]
-                   :extra-deps {nrepl {:mvn/version "RELEASE"}
+                   :extra-deps {nrepl/nrepl {:mvn/version "RELEASE"}
                                 vvvvalvalval/scope-capture {:mvn/version "RELEASE"}
                                 philoskim/debux {:mvn/version "RELEASE"}
                                 cider/piggieback {:mvn/version "RELEASE"}
                                 cider/cider-nrepl {:mvn/version "0.22.3"}
-                                refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}}}
+                                refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0-SNAPSHOT"}}}
 
            :test {:extra-paths ["test"]
                   :extra-deps {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
@@ -31,8 +31,8 @@
 
            :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.520"}
                                com.bhauman/figwheel-main {:mvn/version "RELEASE"}
-                               cljs-http {:mvn/version "0.1.46"}
-                               reagent {:mvn/version "0.8.1"}}
+                               cljs-http/cljs-http {:mvn/version "0.1.46"}
+                               reagent/reagent {:mvn/version "0.8.1"}}
                   :main-opts ["-m" "figwheel.main" "-bo" "dev"]}
 
            :cljs-prod {:main-opts ["-m" "figwheel.main" "-bo" "prod"]}
