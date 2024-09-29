@@ -17,7 +17,7 @@
                  loc duration (compute-clock-duration clock)))
     (when-not end (println loc "CLOCK has no end")))
 
-  (let [sorted (sort-by :start clocks)]
+  #_(let [sorted (sort-by :start clocks)]
     (doseq [[a b] (map vector sorted (drop 1 sorted))
             :when (time/after? (:end a) (:start b))]
       (cl-format true
