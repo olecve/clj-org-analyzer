@@ -29,7 +29,7 @@ chrome:
 	  --user-data-dir=chrome-user-profile
 
 http-server: cljs-prod
-	clojure -A:http-server
+	clojure -M:http-server
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # cljs
