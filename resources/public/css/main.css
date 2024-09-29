@@ -4,8 +4,7 @@
 body {
   min-height: 300vh;
   position: relative;
-  overflow: scroll;
-  margin: 0!important;
+  margin: 0 !important;
   font-family: Roboto, sans-serif;
 }
 @media print {
@@ -59,7 +58,7 @@ a {
 }
 .file-chooser button.add,
 .file-chooser button.remove {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 .file-chooser button.add .material-icons,
 .file-chooser button.remove .material-icons {
@@ -79,7 +78,8 @@ a {
   font-size: small;
   color: #e33;
   padding: 12px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .loading-indicator {
   z-index: 1;
@@ -716,7 +716,7 @@ a {
 }
 .week .week-no {
   cursor: pointer;
-  color: #AAA;
+  color: #aaa;
   text-align: center;
   opacity: 0;
 }
@@ -923,7 +923,7 @@ a {
 }
 .md-chip-remove:after {
   color: #e0e0e0;
-  content: 'x';
+  content: "x";
 }
 .md-chip-remove:hover {
   background: #999;
@@ -938,16 +938,17 @@ a {
   margin: 0 2px 3px 0;
 }
 .md-chip-raised {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .material-button {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 2.25rem;
   font-weight: 500;
-  letter-spacing: .0892857143em;
+  letter-spacing: 0.0892857143em;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 8px 0 8px;
@@ -978,7 +979,7 @@ a {
   cursor: pointer;
 }
 .material-button:hover::before {
-  opacity: .04;
+  opacity: 0.04;
 }
 .material-button::before,
 .material-button::after {
@@ -999,7 +1000,8 @@ a {
 }
 @media screen {
   .elev-2 {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   }
 }
 @media print {
@@ -1040,7 +1042,8 @@ a {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8nwYAAmoBZ0eMiB8AAAAASUVORK5CYII=) repeat;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8nwYAAmoBZ0eMiB8AAAAASUVORK5CYII=)
+    repeat;
   border: outset 1px;
   border-radius: 3px;
   cursor: pointer;
