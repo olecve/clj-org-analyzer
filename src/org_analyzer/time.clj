@@ -1,20 +1,16 @@
 (ns org-analyzer.time
-  (:require [java-time
-             :as
-             time
-             :refer
-             [adjust
-              as
-              before?
-              day-of-week
-              days
-              duration
-              local-date
-              local-date-time
-              minus
-              plus
-              truncate-to
-              weeks]]
+  (:require [java-time :as time :refer [adjust
+                                        as
+                                        before?
+                                        day-of-week
+                                        days
+                                        duration
+                                        local-date
+                                        local-date-time
+                                        minus
+                                        plus
+                                        truncate-to
+                                        weeks]]
             org-analyzer.processing)
   (:import [java.time Duration LocalDate LocalDateTime]
            org_analyzer.processing.Clock))
