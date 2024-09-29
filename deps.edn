@@ -36,11 +36,22 @@
                   :extra-paths ["dev"]
                   :main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
 
-           :cljs-prod {:main-opts ["-m" "figwheel.main" "-bo" "prod"]}
+           :cljs-prod {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.520"}
+                                    com.bhauman/figwheel-main {:mvn/version "RELEASE"}
+                                    cljs-http/cljs-http {:mvn/version "0.1.46"}
+                                    reagent/reagent {:mvn/version "0.8.1"}}
+                       :main-opts ["-m" "figwheel.main" "-bo" "prod"]}
 
            :depstar {:extra-deps
                      {seancorfield/depstar {:mvn/version "0.3.1"}}}
 
            :aot
            {:extra-paths ["target/classes"]
-            :main-opts ["-e" "(binding[*compile-path*\"target/classes\"](compile,'org-analyzer.main))"]}}}
+            :main-opts ["-e" "(binding[*compile-path*\"target/classes\"](compile,'org-analyzer.main))"]}
+
+           :build {:deps {io.github.clojure/tools.build {:mvn/version "0.10.5"}}
+                   :extra-deps {org.clojure/clojurescript {:mvn/version "1.10.520"}
+                                com.bhauman/figwheel-main {:mvn/version "RELEASE"}
+                                cljs-http/cljs-http {:mvn/version "0.1.46"}
+                                reagent/reagent {:mvn/version "0.8.1"}}
+                   :ns-default build}}}
