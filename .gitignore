@@ -6,3 +6,5 @@ chrome-user-profile/
 classes/
 resources/public/cljs-out/
 /bin/
+.clj-kondo/.cache
+.lsp
