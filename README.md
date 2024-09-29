@@ -59,7 +59,6 @@ org-analyzer is on [![MELPA](https://melpa.org/packages/org-analyzer-badge.svg)]
 Then run `(package-install "org-analyzer")`. Afterwards, you can start the tool
 via `M-x org-analyzer-start`.
 
-
 ## Commandline
 
 Download the latest jar as described above and start it with `java -jar org-analyzer-1.0.4.jar`.
@@ -85,14 +84,13 @@ opts:
 For more info see https://github.com/rksm/cljs-org-analyzer.
 ```
 
-
 ## Hacking
 
 To play around with the codebase you will need to have [Clojure](https://clojure.org/guides/getting_started) installed.
 
 To just run the app from source do a `git clone https://github.com/rksm/clj-org-analyzer` and then `make http-server`. Then visit http://localhost:8090.
 
-You can run the server-side tests via `make test`. 
+You can run the server-side tests via `make test`.
 
 To work interactively, I would recommend an editor / IDE that uses [nREPL](https://nrepl.org/nrepl/0.6.0/index.html), I personally use Emacs with [cider](https://cider.mx). Start an nREPL server with `make nrepl` (this will also start an http-server) and then connect to localhost:7888 for a Clojure session and to localhost:7889 for a ClojureScript session.
 
