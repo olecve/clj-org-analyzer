@@ -170,7 +170,7 @@ Example:
   ([date]
    (calendar (adjust date :first-day-of-year) (adjust date :last-day-of-year)))
   ([from-date to-date]
-   (let [from-date (adjust from-date :first-day-of-month)
-         to-date (adjust to-date :last-day-of-month)
-         n-days (time/time-between from-date to-date :days)]
+   (let [from-date (.toLocalDate (adjust from-date :first-day-of-month))
+         to-date (.toLocalDate (adjust to-date :last-day-of-month))
+         n-days (inc (time/time-between from-date to-date :days))]
      (map simple-calendar-day (take n-days (time/iterate plus from-date (days 1)))))))
