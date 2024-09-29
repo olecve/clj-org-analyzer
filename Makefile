@@ -41,7 +41,7 @@ $(JS_FILES): $(CLJS_FILES) deps.edn dev.cljs.edn
 	clojure -A:dev:cljs -C:test
 
 $(JS_PROD_FILES): $(CLJS_FILES) deps.edn prod.cljs.edn
-	clojure -R:cljs -A:cljs-prod
+	clojure -A:cljs -A:cljs-prod
 
 cljs: $(JS_FILES)
 
