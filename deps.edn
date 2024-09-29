@@ -33,7 +33,8 @@
                                com.bhauman/figwheel-main {:mvn/version "RELEASE"}
                                cljs-http/cljs-http {:mvn/version "0.1.46"}
                                reagent/reagent {:mvn/version "0.8.1"}}
-                  :main-opts ["-m" "figwheel.main" "-bo" "dev"]}
+                  :extra-paths ["dev"]
+                  :main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
 
            :cljs-prod {:main-opts ["-m" "figwheel.main" "-bo" "prod"]}
 
