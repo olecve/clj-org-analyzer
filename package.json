@@ -1,6 +1,5 @@
 {
   "name": "clj-org-analyzer",
-  "version": "1.0.0",
   "description": "A Clojure project for analyzing org files",
   "scripts": {
     "build:less:main": "lessc --clean-css --source-map src/less/main.less resources/public/css/main.min.css",
