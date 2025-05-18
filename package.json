@@ -1,0 +1,17 @@
+{
+  "name": "clj-org-analyzer",
+  "description": "A Clojure project for analyzing org files",
+  "scripts": {
+    "build:less:main": "lessc --clean-css --source-map src/less/main.less resources/public/css/main.min.css",
+    "build:less:expts": "lessc --clean-css --source-map src/less/expts.less resources/public/css/expts.min.css",
+    "build:less": "run-p build:less:*",
+    "fmt": "prettier --write **/*.less"
+  },
+  "devDependencies": {
+    "clean-css": "5.3.3",
+    "less-plugin-clean-css": "1.6.0",
+    "less": "4.3.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "3.5.3"
+  }
+}

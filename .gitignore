@@ -1,10 +1,21 @@
+# Clojure/ClojureScript build artifacts
+/target/
+/classes/
+/bin/
 /.cpcache
 /.nrepl-port
+
+# Editor and tooling files
 /.projectile
-/target/
-chrome-user-profile/
-classes/
-resources/public/cljs-out/
-/bin/
 .clj-kondo/.cache
 .lsp
+
+# Node.js dependencies
+/node_modules
+
+# Output files
+resources/public/cljs-out/
+resources/public/css/
+
+# Chrome user profile (if used for testing)
+chrome-user-profile/
