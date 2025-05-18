@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A Clojure project for analyzing org files",
   "scripts": {
-    "build:less:main": "lessc --clean-css --source-map resources/public/css/main.less resources/public/css/main.min.css",
-    "build:less:expts": "lessc --clean-css --source-map resources/public/css/expts.less resources/public/css/expts.min.css",
+    "build:less:main": "lessc --clean-css --source-map src/less/main.less resources/public/css/main.min.css",
+    "build:less:expts": "lessc --clean-css --source-map src/less/expts.less resources/public/css/expts.min.css",
     "build:less": "run-p build:less:*",
     "fmt": "prettier --write **/*.less"
   },
