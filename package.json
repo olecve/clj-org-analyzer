@@ -5,7 +5,7 @@
     "build:less:main": "lessc --clean-css --source-map src/less/main.less resources/public/css/main.min.css",
     "build:less:expts": "lessc --clean-css --source-map src/less/expts.less resources/public/css/expts.min.css",
     "build:less": "run-p build:less:*",
-    "fmt": "prettier --write **/*.less"
+    "fmt": "prettier --write **/*.{less,html,md}"
   },
   "devDependencies": {
     "clean-css": "5.3.3",
